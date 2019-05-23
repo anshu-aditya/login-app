@@ -8,6 +8,11 @@ function escape($string){
 	return mysqli_real_escape_string($link, $string);
 }
 
+//count number of rows in result
+fuction row_count($result){
+	return mysqli_num_rows($result);
+}
+
 //run query to databse 
 function query($query){
 	global $link;
